@@ -1,21 +1,16 @@
 {
-  "name": "lesson20",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "new-apart",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp watch"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "heroku-postbuild": "npm run build"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-install": "*",
-    "gulp-livereload": "*",
-    "gulp-sass": "*",
-    "gulp-watch": "*"
-  },
-  "dependencies": {},
-  "description": ""
+  "dependencies": {
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
 }
