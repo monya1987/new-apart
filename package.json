@@ -1,0 +1,21 @@
+{
+  "name": "lesson20",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-install": "*",
+    "gulp-livereload": "*",
+    "gulp-sass": "*",
+    "gulp-watch": "*"
+  },
+  "dependencies": {},
+  "description": ""
+}
