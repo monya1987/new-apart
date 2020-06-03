@@ -1,1 +1,4 @@
-console.log(1)
+function ggg() {
+    console.log(1);
+}
+ggg()
