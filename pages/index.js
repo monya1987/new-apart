@@ -1,14 +1,17 @@
 import Head from 'next/head'
+import Compo from '../components/header'
+import css from "./style.scss"
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={css.example}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        <Compo />
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
