@@ -1,0 +1,116 @@
+@import "../../scss/mixins";
+
+.header {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  @include media-breakpoint-up(lg) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: #fff;
+  }
+
+  .logo {
+    display: inline-block;
+    padding: 0 10px;
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      width: 100%;
+    }
+    a {
+      position: relative;
+      padding: 10px 25px;
+      border-top: 3px solid #333;
+      border-bottom: 3px solid #333;
+      text-decoration: none;
+      display: inline-block;
+      color: $primary;
+      margin: 10px 0;
+      white-space: nowrap;
+      @include media-breakpoint-down(sm) {
+        padding: 10px 0px;
+      }
+      strong {
+        font-size: 35px;
+        line-height: 1;
+        letter-spacing: 7px;
+        @include media-breakpoint-down(sm) {
+          letter-spacing: 4px;
+        }
+      }
+      span {
+        font-size: 13px;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        background: #fff;
+        padding-left: 5px;
+      }
+
+    }
+  }
+  .phoneWrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+    }
+  }
+  .phone {
+    font-size: 22px;
+    text-align: center;
+    margin-right: 15px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: #333;
+    @include media-breakpoint-down(md) {
+      margin: 15px 0;
+      float: none;
+      display: block;
+    }
+    .text {
+      white-space: nowrap;
+    }
+  }
+  .phoneBtn {
+    font-size: 12px;
+    border: 1px solid #333;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  .icons-block {
+    text-align: right;
+    display: none;
+    @include media-breakpoint-between(445px, sm) {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  .icon {
+    margin-right: 7px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 100px;
+    font-size: 30px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    i {
+      position: relative;
+      top: -8px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .telegram {color: #31A8E0;}
+  .viber {color: #7360F2;}
+  .facebook {margin-right: 0;color: #3B579D;}
+
+}
