@@ -1,0 +1,16 @@
+{
+    "id": 4,
+    "title": "на Французском бульваре, 29",
+    "url": "/na-francuzskom-bulvare-29",
+    "location": {
+        "address": "Французский бульвар, 29",
+        "coordinates": [
+            1,
+            2
+        ],
+        "area": ""
+    },
+    "developer": {
+        "name": "Французский бульвар, 29"
+    }
+}

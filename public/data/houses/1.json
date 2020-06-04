@@ -1,0 +1,16 @@
+{
+    "id": 1,
+    "title": "Сан Сити",
+    "url": "/suncity",
+    "location": {
+        "address": "ул. Генерала Бочарова, 45А",
+        "coordinates": [
+            1,
+            2
+        ],
+        "area": ""
+    },
+    "developer": {
+        "name": "ул. Генерала Бочарова, 45А"
+    }
+}

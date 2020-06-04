@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "title": "Аква Марин",
+        "url": "/zhk-aqua-marine-odessa",
+        "myUrl": "/aqua-marine"
+    },
+    {
+        "id": 1,
+        "title": "Сан Сити",
+        "url": "/zhk-suncity-odessa",
+        "myUrl": "/suncity"
+    },
+    {
+        "id": 2,
+        "title": "Литературный",
+        "url": "/apart-kompleks-literaturnyj-odessa",
+        "myUrl": "/literaturnyj"
+    },
+    {
+        "id": 3,
+        "title": "Удобный",
+        "url": "/zhk-udobnyj-odessa",
+        "myUrl": "/udobnyj"
+    },
+    {
+        "id": 4,
+        "title": "на Французском бульваре, 29",
+        "url": "/zhk-na-francuzskom-bulvare-29-odessa",
+        "myUrl": "/na-francuzskom-bulvare-29"
+    },
+    {
+        "id": 5,
+        "title": "7 Небо",
+        "url": "/zhm-sedmoe-nebo-odessa",
+        "myUrl": "/sedmoe-nebo"
+    }
+]
