@@ -1,4 +1,4 @@
-import data from './results/urlsTest';
+import data from './index/urlsTest';
 import config from './config.js';
 import parser from './parsers/getRecords';
 const tress = require('tress');
@@ -27,7 +27,8 @@ const q = tress((record, callback) => {
 q.drain = () => {
     if (results.length) {
         results.map((result) => {
-            fs.writeFileSync(`./results/houses/${result.id}.json`, JSON.stringify(result, null, 4), 'utf8');
+            const name = result.url.slice(1);
+            fs.writeFileSync(`./../public/data/houses/${name}.json`, JSON.stringify(result, null, 4), 'utf8');
         });
     }
 };

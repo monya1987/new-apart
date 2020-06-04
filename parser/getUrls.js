@@ -30,7 +30,7 @@ q.drain = () => {
         //     item.id = index;
         // });
         fs.writeFileSync(
-            `./results/urls.json`,
+            `./results/urls2.json`,
             JSON.stringify(results, null, 4), 'utf8'
         );
     }

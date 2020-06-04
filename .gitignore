@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/parser/node_modules
+/parser/package.json
 /.pnp
 .pnp.js
 

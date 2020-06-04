@@ -5,24 +5,24 @@ const parser = ($, record) => {
         url: record.myUrl
     };
 
-    const address = $('.project__blockMap .project__item:first-child .project__text .project__text .project__text');
-    const coordinates = null;
-    const area = null;
-    card.location = {
-        address: address.text(),
-        coordinates: [1, 2],
-        area: '',
-    };
+    // const address = $('.project__blockMap .project__item:first-child .project__text .project__text .project__text');
+    // const coordinates = null;
+    // const area = null;
+    // card.location = {
+    //     address: address.text(),
+    //     coordinates: [1, 2],
+    //     area: '',
+    // };
+    //
+    // const name = $('.project__blockMap .project__item:first-child .project__text .project__text .project__text');
+    // card.developer = {
+    //     name: name.text(),
+    // };
 
-    const name = $('.project__blockMap .project__item:first-child .project__text .project__text .project__text');
-    card.developer = {
-        name: name.text(),
-    };
-
-    const test = $('script[type^="application/ld+json"]').contents();
-    test.map((tes) => {
-        console.log(JSON.parse(test[tes].data));
-    });
+    // const test = $('script[type^="application/ld+json"]').contents();
+    // test.map((tes) => {
+    //     console.log(JSON.parse(test[tes].data));
+    // });
 
 
 
