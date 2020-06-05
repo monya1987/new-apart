@@ -2,7 +2,11 @@
 
 .why {
   padding: 40px 0;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 2px solid $primary;
+  margin-bottom: 25px;
+  background: #eee;
   .h1 {
     margin-bottom: 25px;
   }
@@ -11,7 +15,7 @@
     background-size: 70px;
     background-position: 50% 20px;
     background-repeat: no-repeat;
-    border: 2px solid $primary;
+    border: 2px solid #999;
     padding: 95px 20px 20px;
     min-height: 287px;
     border-radius: 4px;

@@ -35,14 +35,15 @@ export default class Description extends React.Component {
                 <div className="container">
                     <div className="row justify-content-center row-cols-1">
                         <div className="col">
-                            <ImageGallery items={images} />
+                            <ImageGallery items={images} showPlayButton={false} showIndex={true} />
                         </div>
                     </div>
                 </div>
                 <div className="container">
                     <div className="row justify-content-center row-cols-1">
                         <div className="col col-sm-12 col-md-6 col-lg-6">
-                            <ul className={css.list}>
+                            <br/><br/>
+                            <ul className='list'>
                                 <li><span>Количество домов:</span> 1</li>
                                 <li><span>Количество секций:</span> 6</li>
                                 <li><span>Количество квартир:</span> 829</li>
@@ -51,7 +52,8 @@ export default class Description extends React.Component {
                             </ul>
                         </div>
                         <div className="col col-sm-12 col-md-6 col-lg-6">
-                            <ul className={css.list}>
+                            <br/><br/>
+                            <ul className='list'>
                                 <li><span>Технология строительства:</span> монолитно-каркасная</li>
                                 <li><span>Отопление:</span> автономное (в доме)</li>
                                 <li><span>Высота потолков:</span> 2,8 м (от пола до потолка)</li>

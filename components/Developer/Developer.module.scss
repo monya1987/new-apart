@@ -1,3 +1,15 @@
+@import "../../scss/mixins";
+
 .developer {
-  margin-bottom: 25px;
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 2px solid $primary;
+  li span {
+    color: #333;
+    font-weight: 700;
+  }
+}
+.title {
+  font-size: 23px;
+  line-height: 23px;
 }

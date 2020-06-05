@@ -4,7 +4,6 @@ import css from "./ProgressBuilding.module.scss"
 export default function ProgressBuilding() {
     return (
         <div className={css.progressBuilding}>
-            <p className="h1">Ход строительства ЖК Аврора</p>
             <div className="container">
                 <div className="row justify-content-center row-cols-1">
                     <p className={css.title}>Начало строительства - Март 2020</p>

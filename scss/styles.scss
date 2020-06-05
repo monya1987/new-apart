@@ -1,9 +1,35 @@
 @import 'bootstrap/bootstrap';
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
+ul.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-left: 20px;
+    position: relative;
+    span {
+      color: #666;
+    }
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 7px;
+      left: -20px;
+      width: 10px;
+      height: 10px;
+      background: $primary;
+    }
+  }
+}
+
 .image-gallery-slide .image-gallery-description {
   bottom: 0!important;
   width: 100%;
+}
+.image-gallery-swipe {
+  border: 1px solid #ccc;
 }
 
 .react-responsive-modal-modal {
@@ -24,6 +50,7 @@ body {
 .h1 {
   font-size: 33px;
   line-height: 43px;
+  margin-bottom: 25px;
   text-align: center;
   color: #333;
   font-weight: 100;

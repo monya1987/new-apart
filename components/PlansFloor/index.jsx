@@ -48,7 +48,7 @@ export default function PlansFloor() {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <ImageGallery items={images} showPlayButton={false} showIndex={true} />
+                        <ImageGallery items={images} showPlayButton={false} showIndex={true} thumbnailPosition={'top'} />
                     </div>
                 </div>
             </div>
