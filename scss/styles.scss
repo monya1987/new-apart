@@ -1,7 +1,34 @@
 @import 'bootstrap/bootstrap';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.image-gallery-slide .image-gallery-description {
+  bottom: 0!important;
+  width: 100%;
+}
+
+.react-responsive-modal-modal {
+  width: 90%;
+}
 
 .index-wrapper {
   @include media-breakpoint-up(lg) {
     padding-top: 84px;
+  }
+}
+
+body {
+  min-width: 320px;
+  color: #333;
+}
+
+.h1 {
+  font-size: 33px;
+  line-height: 43px;
+  text-align: center;
+  color: #333;
+  font-weight: 100;
+  @include media-breakpoint-down(md) {
+    font-size: 27px;
+    line-height: 30px;
   }
 }

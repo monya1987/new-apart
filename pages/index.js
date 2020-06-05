@@ -1,4 +1,5 @@
 // import Head from 'next/head'
+import Top from '../components/Top'
 import Why from '../components/Why'
 import PlansFloor from '../components/PlansFloor'
 import Prices from '../components/Prices'
@@ -13,6 +14,7 @@ import About from '../components/About'
 export default function Home() {
   return (
     <main>
+        <Top />
         <Why />
         <PlansFloor />
         <Prices />

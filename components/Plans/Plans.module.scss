@@ -1,0 +1,56 @@
+@import "../../scss/mixins";
+
+.plans {
+  .h1 {
+    margin-bottom: 25px;
+  }
+  margin-bottom: 25px;
+  .title {
+    color: #fff;
+    background: $primary;
+    font-size: 16px;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 3px 4px;
+  }
+  .rooms {
+    cursor: pointer;
+    &:before {
+      content: '';
+      display: block;
+      background-image: url(./../../public/images/icons/zoom.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      z-index: 1;
+      width: 100px;
+      height: 100px;
+      left: 50%;
+      margin-left: -50px;
+      top: 50%;
+      margin-top: -50px;
+      opacity: .5;
+    }
+    &:hover {
+      &:before {
+        opacity: .7;
+      }
+    }
+    background: rgba(255,255,255,0.8);
+    border: 2px solid $primary;
+    box-shadow: 7px 7px 7px #777;
+    margin-bottom: 20px;
+    border-radius: 0;
+    padding: 10px;
+    display: flex;
+    font-size: 16px;
+    p {
+      margin-bottom: 7px;
+    }
+    .pricesImg {
+      width: 30%;
+      height: 100px;
+      margin-right: 10px;
+    }
+  }
+}

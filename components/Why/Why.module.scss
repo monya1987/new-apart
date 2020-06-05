@@ -1,0 +1,39 @@
+@import "../../scss/mixins";
+
+.why {
+  padding: 40px 0;
+  margin-bottom: 20px;
+  .h1 {
+    margin-bottom: 25px;
+  }
+  .box {
+    background: rgba(255,255,255,0.8);
+    background-size: 70px;
+    background-position: 50% 20px;
+    background-repeat: no-repeat;
+    border: 2px solid $primary;
+    padding: 95px 20px 20px;
+    min-height: 287px;
+    border-radius: 4px;
+    box-shadow: 7px 7px 17px #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+    &.first  {background-image: url(./../../public/images/icons/icon4.jpg);}
+    &.second {background-image: url(./../../public/images/icons/icon2.png);}
+    &.third  {background-image: url(./../../public/images/icons/icon3.png);}
+    &.four   {background-image: url(./../../public/images/icons/icon1.png);min-height: 345px;}
+    &.five   {background-image: url(./../../public/images/icons/icon5.png);min-height: 345px;}
+    &.six    {background-image: url(./../../public/images/icons/icon6.png);min-height: 345px;}
+    .descr {
+      text-align: justify;
+      margin-bottom: 0;
+      font-size: 13px;
+      strong {
+        text-align: center;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

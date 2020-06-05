@@ -1,3 +1,4 @@
+import 'react-responsive-modal/styles.css';
 import '../scss/styles.scss';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
