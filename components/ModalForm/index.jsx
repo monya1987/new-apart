@@ -57,7 +57,7 @@ export default function ModalForm(props) {
                             </div>
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-link" onClick={props.onClose()}>Закрыть</button>
+                            <button type="button" className="btn btn-link" onClick={props.onClose}>Закрыть</button>
                             <button type="button" className="btn btn-primary" onClick={sendTgBoeMessage}>Отправить
                             </button>
                         </div>
