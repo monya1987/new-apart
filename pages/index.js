@@ -57,7 +57,7 @@ export default function Home() {
   return (
     <main>
         <Head>
-            <title>Аврора — Квартиры в ЖК Аврора в Одессе. Официальный партнер застройщика.</title>
+            <title>ЖК Аврора — Официальный партнер застройщика. Квартиры в ЖК Аврора в Одессе. </title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <meta name="description" content="ЖК Аврора. Купить квартиру в новостройке Одессы, Малиновский район, Черемушки. Квартиры от застройщика без комиссии и переплат!" />

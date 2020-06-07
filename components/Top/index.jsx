@@ -48,7 +48,7 @@ export default class Why extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Modal open={open}  center>
+                <Modal open={open}  onClose={this.onCloseModal}  center>
                     <ModalForm onClose={this.onCloseModal} />
                 </Modal>
             </div>
