@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 34444",
-    "build": "next build",
-    "start": "next start -p $PORT"
+    "build": "sitemap && next build",
+    "start": "next start -p $PORT",
+    "sitemap": "node sitemap_generator.js"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -17,5 +18,7 @@
     "react-responsive-modal": "^5.0.2",
     "telegram-bot-api": "^1.3.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nextjs-sitemap-generator": "^1.0.0"
+  }
 }
