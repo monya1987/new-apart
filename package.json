@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 34444",
+    "dev": "PORT=3555 node server.js",
     "build": "npm run sitemap && next build",
-    "start": "next start -p $PORT",
+    "start": "PORT=$PORT NODE_ENV=production node server.js",
+    "devOld": "next dev -p 34444",
+    "buildOld": "npm run sitemap && next build",
+    "startOld": "next start -p $PORT",
     "sitemap": "node sitemap_generator.js"
   },
   "dependencies": {
