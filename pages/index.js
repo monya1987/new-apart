@@ -15,7 +15,7 @@ const schema = () => {
                 "@context":"http://schema.org",
                 "@type":["Apartment","Product","PostalAddress"],
                 "streetAddress":"Валентины Терешковой, 27-А, 27-Б, 27-Е",
-                "image":["https://www.new-apart.od.ua/wp-content/themes/avrora/images/building/1.jpg", "https://www.new-apart.od.ua/wp-content/themes/avrora/images/building/2.jpg", "https://www.new-apart.od.ua/wp-content/themes/avrora/images/building/3.jpg", "https://www.new-apart.od.ua/wp-content/themes/avrora/images/building/4.jpg", "https://www.new-apart.od.ua/wp-content/themes/avrora/images/building/5.jpg"],
+                "image":["https://www.new-apart.od.ua/images/building/1.jpg", "https://www.new-apart.od.ua/images/building/2.jpg", "https://www.new-apart.od.ua/images/building/3.jpg", "https://www.new-apart.od.ua/images/building/4.jpg", "https://www.new-apart.od.ua/images/building/5.jpg"],
                 "addressLocality":"Одесса",
                 "addressRegion":"Одесская",
                 "postalCode":65076,
@@ -34,21 +34,21 @@ const schema = () => {
                 "priceCurrency":"USD",
                 "price":"27 750",
                 "description":"Однокомнатные квартиры 37 в ЖК Аврора",
-                "image":["https://www.new-apart.od.ua/wp-content/themes/avrora/images/1/1A.jpg"]
+                "image":["https://www.new-apart.od.ua/images/1/1A.jpg"]
             },{
                 "@type":"Offer",
                 "priceCurrency":"USD",
                 "price":"53 290",
                 "description":"Двухкомнатные квартиры в ЖК Аврора",
-                "image":["https://www.new-apart.od.ua/wp-content/themes/avrora/images/1/2.jpg"]
+                "image":["https://www.new-apart.od.ua/images/1/2.jpg"]
             },{
                 "@type":"Offer",
                 "priceCurrency":"USD",
                 "price":"58 800",
                 "description":"Трехкомнатные квартиры в ЖК Аврора",
-                "image":["https://www.new-apart.od.ua/wp-content/themes/avrora/images/1/3.jpg"]
+                "image":["https://www.new-apart.od.ua/images/1/3.jpg"]
             }],
-                "offerCount":"829 (1 дом)",
+                "offerCount":"829",
                 "lowPrice":"700",
                 "highPrice":"750"}}`};
 };

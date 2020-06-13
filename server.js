@@ -6,8 +6,7 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 const redirects = [
-    { from: '/old-link-1', to: '/new-link-1' },
-    { from: '/old-link-2', to: 'https://externalsite.com/new-link-2' },
+    { from: '/index', to: '/' }
 ];
 
 const port = process.env.PORT ? process.env.PORT : 3000;
