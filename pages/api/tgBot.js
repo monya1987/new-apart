@@ -15,7 +15,7 @@ export default (req, res) => {
         });
         api.sendMessage({
             chat_id: [236266447, 525883409, 292138710],
-            text: `${name} ${phone}, 'Визитка - Аврора'`
+            text: `${name} ${phone}, 'Визитка - Сады ривьеры'`
         });
     }
     res.statusCode = 200;

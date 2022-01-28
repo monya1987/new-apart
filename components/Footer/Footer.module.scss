@@ -4,10 +4,12 @@
   display: flex;
   align-items: center;
   border-top: 2px solid #284563;
-  justify-content: space-between;
+  justify-content: center;
   padding: 15px;
   background: #373737;
   color: #8ab3f3;
+
+  text-align: center;
   text-transform: uppercase;
   @media (max-width: 850px) {
     flex-direction: column;
@@ -58,10 +60,5 @@
   .copyright {
     font-size: 14px;
     color: #fff;
-    @media (max-width: 850px) {
-      margin-top: 20px;
-      display: block;
-      text-align: center;
-    }
   }
 }

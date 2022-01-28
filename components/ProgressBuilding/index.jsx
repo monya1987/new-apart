@@ -4,26 +4,55 @@ import css from "./ProgressBuilding.module.scss"
 export default function ProgressBuilding() {
     return (
         <div className={css.progressBuilding}>
+            <p className="h1">Видеоотчеты</p>
             <div className="container">
                 <div className="row justify-content-center row-cols-1">
-                    <p className={css.title}>Начало строительства - Март 2020</p>
                     <div className="container">
                         <div className="row justify-content-center row-cols-1">
-                            <div className="col col-sm-6 col-md-4 col-lg-4">
-                                <p className={css.title2}>Июнь 2019 ведуться подготовительные работы.</p>
-                                <img className="img-fluid"
-                                     src="/images/progress/233890.jpg"
-                                     alt="ЖК Аврора Июнь 2019"/>
+                            <div className="col col-sm-12 col-md-6 col-lg-6">
+                                <div className={css.box}>
+                                    <iframe src={`https://www.youtube.com/embed/x253tS0lsbg?controls=0&showinfo=0&modestbranding=0&autohide=1`} frameBorder="0"
+                                            allow="autoplay; encrypted-media" allowFullScreen />
+                                </div>
                             </div>
-                            <div className="col col-sm-6 col-md-4 col-lg-4">
-                                <p className={css.title2}>Март 2020 начало строительства.</p>
-                                <img className="img-fluid"
-                                     src="/images/progress/271414.jpg"
-                                     alt="ЖК Аврора Март 2020"/>
+                            <div className="col col-sm-12 col-md-6 col-lg-6">
+                                <div className={css.box}>
+                                    <iframe src={`https://www.youtube.com/embed/QEPgYPTjTGI?controls=0&showinfo=0&modestbranding=0&autohide=1`} frameBorder="0"
+                                            allow="autoplay; encrypted-media" allowFullScreen />
+                                </div>
+                            </div>
+                        </div>
+                        <br/><br/>
+                        <div className="row justify-content-center row-cols-1">
+                            <div className="col col-sm-12 col-md-6 col-lg-6">
+                                <div className={css.box}>
+                                    <iframe src={`https://www.youtube.com/embed/BodgXvVYM7A?controls=0&showinfo=0&modestbranding=0&autohide=1`} frameBorder="0"
+                                            allow="autoplay; encrypted-media" allowFullScreen />
+                                </div>
+                            </div>
+                            <div className="col col-sm-12 col-md-6 col-lg-6">
+                                <div className={css.box}>
+                                    <iframe src={`https://www.youtube.com/embed/mfQ8F1iIWZU?controls=0&showinfo=0&modestbranding=0&autohide=1`} frameBorder="0"
+                                            allow="autoplay; encrypted-media" allowFullScreen />
+                                </div>
+                            </div>
+                        </div>
+                        <br/><br/>
+                        <div className="row justify-content-center row-cols-1">
+                            <div className="col col-sm-12 col-md-6 col-lg-6">
+                                <div className={css.box}>
+                                    <iframe src={`https://www.youtube.com/embed/XC8ZEZWG_jQ?controls=0&showinfo=0&modestbranding=0&autohide=1`} frameBorder="0"
+                                            allow="autoplay; encrypted-media" allowFullScreen />
+                                </div>
+                            </div>
+                            <div className="col col-sm-12 col-md-6 col-lg-6">
+                                <div className={css.box}>
+                                    <iframe src={`https://www.youtube.com/embed/RB2dRHqcF7c?controls=0&showinfo=0&modestbranding=0&autohide=1`} frameBorder="0"
+                                            allow="autoplay; encrypted-media" allowFullScreen />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <p className={css.title}>Окончание строительства - Декабрь 2024</p>
                 </div>
             </div>
         </div>

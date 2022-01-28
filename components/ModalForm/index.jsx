@@ -44,9 +44,10 @@ export default function ModalForm(props) {
                     :
                     <>
                         <div className="modal-header">
-                            <h5 className="modal-title">Заполните поля:</h5>
+                            <h5 className="modal-title">Сады Ривьеры:</h5>
                         </div>
                         <div className="modal-body">
+                            <p>Оставьте свой номер телефона, и наш менеджер свяжется с Вами в ближайшее время</p>
                             <div className="form-group">
                                 <label htmlFor="userName">Имя:</label>
                                 <input type="text" value={name} className="form-control" placeholder="Ваше имя" onChange={handleChangeA}/>

@@ -36,12 +36,6 @@ ul.list {
   width: 90%;
 }
 
-.index-wrapper {
-  @include media-breakpoint-up(lg) {
-    padding-top: 84px;
-  }
-}
-
 body {
   min-width: 320px;
   color: #333;

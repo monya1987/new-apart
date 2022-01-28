@@ -1,24 +1,53 @@
 import React from 'react';
 import css from "./Map.module.scss"
+import { Modal } from 'react-responsive-modal';
+import ModalForm from '../ModalForm'
+import Image from 'next/image';
 
-export default function Map() {
-    return (
-        <div className={css.map}>
-            <p className="h1">ЖК Аврора на карте</p>
-            <div className="container">
-                <div className="row justify-content-center row-cols-1">
-                    <div className="col col-sm-12 col-md-8 col-lg-8">
-                        <img className="lazy-img img-fluid" src="/images/map-avro-site.jpg"
-                             alt="ЖК Аврора на карте"/>
-                        <p className={css.subHeader}>г.Одесса, Малиновский район, ул. Героїв Крут (Валентины Терешковой), 27-А, 27-Б, 27-Е</p>
-                    </div>
-                    <div className="col col-sm-12 col-md-4 col-lg-4">
+export default class Prices extends React.Component {
+    state = {
+        open: false,
+    };
 
-                        <p className={css.text}><span>Отдел продаж:</span> ул. ген.Петрова 17/2</p>
-                        <p className={css.text}><span>Телефон:</span> +38 (097) 273 15 20</p>
+    onOpenModal = () => {
+        this.setState({ open: true });
+    };
+
+    onCloseModal = () => {
+        this.setState({ open: false });
+    };
+
+    render() {
+        const { open } = this.state;
+        return (
+            <div className={css.map}>
+                <p className="h1">Отдел продаж:</p>
+                <div className="container">
+                    <div className="row justify-content-center row-cols-1">
+                        <div className="col col-sm-12 col-md-8 col-lg-8">
+                            <Image
+                                alt="Отдел продаж «САДЫ РИВЬЕРЫ»"
+                                src="/images/otdelprodaj.jpg"
+                                layout="responsive"
+                                width={1000}
+                                height={666}
+                            />
+
+                        </div>
+                        <div className="col col-sm-12 col-md-4 col-lg-4">
+                            <p className={css.text}>Одесская область, c. Фонтанка ул. Чехова, 1</p>
+                            <p className={css.text}><span>Телефон:</span> +38 (097) 273 15 20</p>
+                            <p className={css.text}><span>График работы:</span><br/>пн-пт: 09:00 - 19:00, сб: 10:00 -
+                                17:00</p>
+                            <button onClick={this.onOpenModal} className="btn btn-lg btn-success">Обратный звонок
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <Modal open={open} onClose={this.onCloseModal} center>
+                    <ModalForm onClose={this.onCloseModal}/>
+                </Modal>
             </div>
-        </div>
-    );
+        );
+    }
 }

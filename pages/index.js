@@ -9,72 +9,33 @@ import ProgressBuilding from '../components/ProgressBuilding';
 import Map from '../components/Map';
 import Developer from '../components/Developer';
 import About from '../components/About';
-
-const schema = () => {
-    return {__html: `{
-                "@context":"http://schema.org",
-                "@type":["Apartment","Product","PostalAddress"],
-                "streetAddress":"Валентины Терешковой, 27-А, 27-Б, 27-Е",
-                "image":["https://www.new-apart.od.ua/images/building/1.jpg", "https://www.new-apart.od.ua/images/building/2.jpg", "https://www.new-apart.od.ua/images/building/3.jpg", "https://www.new-apart.od.ua/images/building/4.jpg", "https://www.new-apart.od.ua/images/building/5.jpg"],
-                "addressLocality":"Одесса",
-                "addressRegion":"Одесская",
-                "postalCode":65076,
-                "name":"ЖК Аврора",
-                "category":"Новостройки",
-                "brand":"ШТОРМ ДЖЕЙ.СІ.",
-                "url":"https://www.new-apart.od.ua/",
-                "description":"Купить квартиру в новостройке Аврора в Одессе. Вся информация о Условиях покупки, Планировках квартир, Разрешениях на строительство, Акциях и тд. в ЖК Аврора",
-                "releaseDate":"Конец строительства - Декабрь 2024",
-                "offers":{"@type":"AggregateOffer",
-                "priceCurrency":"USD",
-                "availability":"https://schema.org/InStock",
-                "offers":[
-            {
-                "@type":"Offer",
-                "priceCurrency":"USD",
-                "price":"27 750",
-                "description":"Однокомнатные квартиры 37 в ЖК Аврора",
-                "image":["https://www.new-apart.od.ua/images/1/1A.jpg"]
-            },{
-                "@type":"Offer",
-                "priceCurrency":"USD",
-                "price":"53 290",
-                "description":"Двухкомнатные квартиры в ЖК Аврора",
-                "image":["https://www.new-apart.od.ua/images/1/2.jpg"]
-            },{
-                "@type":"Offer",
-                "priceCurrency":"USD",
-                "price":"58 800",
-                "description":"Трехкомнатные квартиры в ЖК Аврора",
-                "image":["https://www.new-apart.od.ua/images/1/3.jpg"]
-            }],
-                "offerCount":"829",
-                "lowPrice":"700",
-                "highPrice":"750"}}`};
-};
+import * as data from '../content/data';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+configureAnchors({offset: -60, scrollDuration: 200, keepLastAnchorHash: true});
 
 export default function Home() {
   return (
     <main>
         <Head>
-            <title>ЖК Аврора — Официальный партнер застройщика. Квартиры в ЖК Аврора в Одессе. </title>
+            <title>{data.BUILDING_NAME} — купить квартиру от застройщика в Одессе.</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+            <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap" rel="stylesheet"/>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <meta name="description" content="ЖК Аврора. Купить квартиру в новостройке Одессы, Малиновский район, Черемушки. Квартиры от застройщика без комиссии и переплат!" />
+            <meta name="description" content={`Недвижимость в ЖК ${data.BUILDING_NAME}. ✅ Цены без посредников ✅ Индивидуальные условия рассрочки 🎁 Акции и скидки`} />
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154882949-1" />
             <script dangerouslySetInnerHTML={{__html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-154882949-1');`}} />
         </Head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={schema()} />
         <Top />
-        <Prices />
-        <Why />
-        <PlansFloor />
-        <Plans />
-        <Description />
-        <ProgressBuilding />
-        <Map />
-        <Developer />
-        <About />
+        <ScrollableAnchor id={'about'}><div><About /></div></ScrollableAnchor>
+        <ScrollableAnchor id={'advantages'}><div><Why /></div></ScrollableAnchor>
+        <ScrollableAnchor id={'prices'}><div><Prices /></div></ScrollableAnchor>
+        {/*<ScrollableAnchor id={'buildingProgress'}><div><PlansFloor /></div></ScrollableAnchor>*/}
+        {/*<ScrollableAnchor id={'infrastructure'}><div><Plans /></div></ScrollableAnchor>*/}
+        <ScrollableAnchor id={'developer'}><div><Developer /></div></ScrollableAnchor>
+        <ScrollableAnchor id={'progress'}><div><ProgressBuilding /></div></ScrollableAnchor>
+        <ScrollableAnchor id={'contacts'}><div><Map /></div></ScrollableAnchor>
     </main>
   )
 }

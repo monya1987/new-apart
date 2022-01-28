@@ -2,6 +2,11 @@
 
 .prices {
   margin-top: 25px;
+  .wrapper {
+    text-align: center;
+    border: 2px solid $primary;
+    padding: 15px 0;
+  }
   .title {
     color: #fff;
     background: $primary;
@@ -11,6 +16,7 @@
     padding: 3px 4px;
   }
   .box {
+    div {width: 100%;}
     background: rgba(255,255,255,0.8);
     border: 2px solid $primary;
     box-shadow: 7px 7px 7px #777;

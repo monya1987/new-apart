@@ -1,79 +1,157 @@
 @import "../../scss/mixins";
 
 .header {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  @include media-breakpoint-up(lg) {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    background: #fff;
+  box-shadow: 0 0 10px 0 #000;
+  background: linear-gradient(180deg, rgba(0,0,0,.8) 100%, rgba(0,0,0,.8) 2.08%, rgba(0,0,0,.3) 100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  .logoWrap {
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
-
   .logo {
-    display: inline-block;
+    display: flex;
     padding: 0 10px;
+    &:before {
+      content: '';
+      margin-top: 7px;
+      min-width: 60px;
+      min-height: 60px;
+      background-image: url(./../../public/images/logo.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
     @include media-breakpoint-down(md) {
       text-align: center;
       width: 100%;
     }
-    a {
-      position: relative;
-      padding: 10px 25px;
-      border-top: 3px solid #333;
-      border-bottom: 3px solid #333;
-      text-decoration: none;
-      display: inline-block;
-      color: $primary;
-      margin: 10px 0;
+    div {
+      display: flex;
+      flex-direction: column;
       white-space: nowrap;
-      @include media-breakpoint-down(sm) {
-        padding: 10px 0px;
-      }
+      margin-left: 10px;
+      margin-top: 10px;
       strong {
-        font-size: 35px;
-        line-height: 1;
-        letter-spacing: 7px;
-        @include media-breakpoint-down(sm) {
-          letter-spacing: 4px;
-        }
+        font-family: $headings-font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        display: block;
+        color: #fff;
       }
       span {
-        font-size: 13px;
-        position: absolute;
-        bottom: -10px;
-        right: 0;
-        background: #fff;
-        padding-left: 5px;
+        display: inline-block;
+        align-self: flex-end;
+        font-size: 11px;
+        background: $primary;
+        padding: 2px 4px;
+        color: #000;
+        border-radius: 10px 0 10px 0;
       }
-
+    }
+  }
+  .mainMenu {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+    border-top: 1px solid #000;
+    margin-top: 7px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: #fff;
+      margin: 0 10px;
+      padding: 5px 0;
+      &:hover {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 4px;
+      }
+      &.active {
+        color: $primary;
+        border-bottom: 1px solid $primary;
+        padding-bottom: 4px;
+      }
+    }
+  }
+  .burgerBtn {
+    display: none;
+    align-items: center;
+    margin-right: 25px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+      display: flex;
+    }
+    span, span:before, span:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transition-duration: .25s;
+    }
+    span:before {top: -8px;}
+    span:after {top: 8px;}
+    &.active {
+      span {
+        transform: rotate(45deg);
+      }
+      span:before {
+        top: 0;
+        transform: rotate(0);
+      }
+      span:after {
+        top: 0;
+        transform: rotate(90deg);
+      }
     }
   }
   .phoneWrap {
-    display: flex;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+    color: #fff;
+    display: inline-flex;
     align-items: center;
     justify-content: flex-end;
-    @include media-breakpoint-down(md) {
-      justify-content: center;
+    font-size: 13px;
+    float: right;
+    > span {
+      flex-direction: column;
+      text-align: right;
     }
+    svg {
+      fill: #fff;
+      margin-right: 15px;
+      border: 2px solid $primary;
+      border-radius: 100px;
+      padding: 8px;
+    }
+  }
+  .iconPhone {
+    background: #fff;
+    fill: #fff;
   }
   .phone {
     font-size: 22px;
-    text-align: center;
-    margin-right: 15px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 7px 15px;
-    border-radius: 5px;
-    color: #333;
+    display: block;
     @include media-breakpoint-down(md) {
       margin: 15px 0;
-      float: none;
       display: block;
     }
     .text {
       white-space: nowrap;
+      color: $primary;
     }
   }
   .phoneBtn {
