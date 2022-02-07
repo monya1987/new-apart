@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "PORT=3556 node server.js",
     "build": "next build",
-    "start": "PORT=$PORT NODE_ENV=production node server.js",
+    "start": "PORT=3005 NODE_ENV=production node server.js",
     "sitemap": "node sitemap_generator.js"
   },
   "dependencies": {
