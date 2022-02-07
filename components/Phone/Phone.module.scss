@@ -1,0 +1,40 @@
+@import "../../scss/mixins";
+
+.phoneWrap {
+  &:hover {
+    color: #fff;
+  }
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 13px;
+  float: right;
+  > span {
+    flex-direction: column;
+    text-align: right;
+  }
+  svg {
+    fill: #fff;
+    margin-right: 15px;
+    border: 2px solid $primary;
+    border-radius: 100px;
+    padding: 8px;
+  }
+}
+.iconPhone {
+  background: #fff;
+  fill: #fff;
+}
+.phone {
+  font-size: 22px;
+  display: block;
+  @include media-breakpoint-down(md) {
+    margin: 15px 0;
+    display: block;
+  }
+  .text {
+    white-space: nowrap;
+    color: $primary;
+  }
+}

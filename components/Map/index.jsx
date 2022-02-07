@@ -35,12 +35,11 @@ export default class Prices extends React.Component {
 
                         </div>
                         <div className="col col-sm-12 col-md-4 col-lg-4">
-                            <p className={css.text}>Одесская область, c. Фонтанка ул. Чехова, 1</p>
+                            <p className={css.text}><span>Адрес:</span> Одесская область, c. Фонтанка <br/>ул. Чехова, 1</p>
                             <p className={css.text}><span>Телефон:</span> +38 (097) 273 15 20</p>
-                            <p className={css.text}><span>График работы:</span><br/>пн-пт: 09:00 - 19:00, сб: 10:00 -
+                            <p className={css.text}><span>График работы:</span><br/>пн-пт: 09:00 - 19:00<br/>   сб: 10:00 -
                                 17:00</p>
-                            <button onClick={this.onOpenModal} className="btn btn-lg btn-success">Обратный звонок
-                            </button>
+                            <button onClick={this.onOpenModal} className="btn btn-lg btn-success">Перезвонить мне</button>
                         </div>
                     </div>
                 </div>

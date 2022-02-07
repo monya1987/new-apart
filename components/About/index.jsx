@@ -14,7 +14,7 @@ export default function About() {
                         <p>Район спроектирован по принципу города коротких расстояний, что предполагает собой наличие всех объектов инфраструктуры внутри района.</p>
                         <p>Стены из красного кирпича, малоэтажность, вид на море и продуманная инфраструктура</p>
                         <p>Почувствуйте новый уровень комфортной жизни в жилом районе «Сады Ривьеры».</p>
-                        <a href="#progress" type="button" className="btn btn-outline-primary">Отчеты о строительстве</a>
+                        {/*<a href="#progress" type="button" className="btn btn-outline-primary">Отчеты о строительстве</a>*/}
                         <br/><br/>
                     </div>
                     <div className="col col-sm-12 col-md-12 col-lg-6 flex-sm-column-reverse">

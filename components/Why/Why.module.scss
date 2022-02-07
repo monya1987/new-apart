@@ -14,21 +14,19 @@
     background-size: 100% 180px;
     background-position: 50% 0;
     background-repeat: no-repeat;
-    border: 2px solid $primary;
     padding: 195px 20px 20px;
     min-height: 360px;
-    border-radius: 4px;
     box-shadow: 7px 7px 17px #777;
     font-size: 14px;
     margin-bottom: 20px;
-    &.first  {background-image: url(./../../public/images/icons/p1.jpg);}
+    &.first  {background-image: url(./../../public/images/icons/p3.jpg);}
     &.second {background-image: url(./../../public/images/icons/p2.jpg);}
-    &.third  {background-image: url(./../../public/images/icons/p3.jpg);}
+    &.third  {background-image: url(./../../public/images/icons/p1.jpg);}
     &.four   {background-image: url(./../../public/images/icons/p4.jpg);min-height: 345px;}
     &.five   {background-image: url(./../../public/images/icons/p5.jpg);min-height: 345px;}
     &.six    {background-image: url(./../../public/images/icons/p6.jpg);min-height: 345px;}
     .descr {
-      text-align: justify;
+      text-align: center;
       margin-bottom: 0;
       font-size: 13px;
       strong {

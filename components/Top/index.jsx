@@ -1,5 +1,4 @@
 import React from 'react';
-import classnames from 'classnames';
 import css from "./Top.module.scss";
 import { Modal } from 'react-responsive-modal';
 import ModalForm from '../ModalForm'
